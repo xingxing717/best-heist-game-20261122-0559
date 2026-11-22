@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velvet Shadow — The Meridian Gallery Heist</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #070a14;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    display: block;
+    width: min(96vw, 960px);
+    height: auto;
+    background: #141a2b;
+    box-shadow: 0 0 60px rgba(233, 196, 106, 0.12), 0 0 0 1px #31406b;
+  }
+  #caption {
+    color: #8b98a8;
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 0.04em;
+  }
+  #caption b { color: #e9c46a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640"></canvas>
+  <div id="caption"><b>VELVET SHADOW</b> — The Meridian Gallery Heist · WASD move · Shift sneak · Click smoke · 2 EMP · R restart</div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
